@@ -2,12 +2,16 @@
 
 使用管理员权限打开cmd.exe/Open cmd.exe with administrator privileges
 
+1. 操作系统: win11
+2. 可执行文件: cmda.exe
+3. 代码: main.cpp
+
 # 原理
 
-1 以“管理员身份运行” cmda.exe，cmda 打开 cmd.exe 继承管理员权限
-2 cmda 只是一个简单的“代理工具/中介”
-3 你也可以使用 python/bat 脚本作为中介打开 cmd，继承管理员权限。
-4 cmda 可以作为可执行文件添加到右键菜单，打开cmd后定位到当前目录
+1. 以“管理员身份运行” cmda.exe，cmda 打开 cmd.exe 继承管理员权限
+2. cmda 只是一个简单的“代理工具/中介”
+3. 你也可以使用 python/bat 脚本作为中介打开 cmd，继承管理员权限。
+4. cmda 可以作为可执行文件添加到右键菜单，打开cmd后定位到当前目录
 
 # 使用步骤
 
@@ -24,7 +28,7 @@
 
 ![](img/1.png)
 
-3. 
+3. 控制台中使用
 
 ```
 cd C:\Users\github
@@ -39,15 +43,17 @@ cmda .
 
 1. 软件 ContextMenuManager.NET.4.0.exe
 
-github.com/BluePointLilac/ContextMenuManager/releases
+https://github.com/BluePointLilac/ContextMenuManager
+
 releases 可下载 exe
 
-
 2. 主页 》 目录背景 》新建一个菜单项目
-	1 菜单文本: cmda .
-	2 菜单命令: C:\libs\cmda.exe 
+	
+	1. 菜单文本: cmda .
+	
+	2. 菜单命令: C:\libs\cmda.exe 
 		必须完整路径
-	3 命令参数: .
+	3. 命令参数: .
 
 ![](img/2.png)
 
